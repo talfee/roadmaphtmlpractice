@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.header-box {
+    /* background: background-color; */
+    padding: 50px;
+    text-align: center;
+    font-family: "Fraunces", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 300%;  
+    margin: 10px;
+    letter-spacing: -0.03em;
+}
+
+.subheader {
+    font-family: "Fraunces", Helvetica, sans-serif;
+    /* font-weight: bold; */
+    font-size: x-large;  
+}
+.general-text{
+    font-family: "Fraunces", Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.horizontal-even-flex {
+    display: flex;
+    /* background:lightgray; */
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+
+.horizontal-away-flex {
+    /* background:grey; */
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    text-align: center;
+}
+
+.horizontal-flex {
+    display: flex;
+    /* background:lightgray; */
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+.one {
+    flex: 1;
+    justify-content: left;
+    /* background: lightblue; */
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+}
+.two {
+    flex: 2;
+    /* background: lightgreen; */
+    margin: 10px;
+}
