@@ -1,0 +1,21 @@
+.welcome {
+    margin: 50px;
+    /* background: rgb(186, 128, 128); */
+    padding: 20px;
+}
+
+.welcome-text {
+    font-size: xx-large;
+    font-weight: 300; /* "light" is not a valid value */
+    text-align: left;
+    /* margin: 10px 0; */
+}
+
+.hello {
+    margin-bottom: 20px;
+}
+
+.body {
+    margin: 0px;
+    line-height: 1;
+}
