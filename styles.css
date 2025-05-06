@@ -7,9 +7,12 @@ body {
 }
 
 .header-box {
-    padding: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
     text-align: left;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 300%;  
     margin: 10px;
     letter-spacing: -0.03em;
@@ -28,7 +31,7 @@ body {
     /* background:lightgray; */
     text-align: center;
     justify-content: space-evenly;
-    /* gap: 30px; */
+    gap: 10px;
     /* padding: 10px; */
 }
 
@@ -58,14 +61,15 @@ body {
     text-align: center;
     gap: 10px;
     justify-content: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .hoverbutton {
     padding: 10px 15px;
-    border: 1.5px solid transparent; 
-    border-radius: 50px;
+    border: 1px solid transparent; 
+    border-radius: 10px;
     transition: all 0.2s ease;
+    align-content: center;
 }
 
 .hoverbutton:hover {
@@ -74,7 +78,7 @@ body {
 
 .hoverbutton:active {
     transform: scale(0.95);
-    background-color: lightgray;
+    background-color: white;
 }
 
 .nonbutton {

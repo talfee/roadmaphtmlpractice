@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-    padding: 20px;
+    justify-content: left;
+    padding: 50px;
 }
 
 .filter-button {
@@ -28,7 +28,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .card {
@@ -39,6 +39,7 @@
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+    border: black solid 1px;
 }
 
 
