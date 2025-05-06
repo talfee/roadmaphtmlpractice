@@ -5,39 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <div class="horizontal-away-flex general-text">
-        <div class="horizontal-even-flex">
-            <div><img src="assets/moon.png" width="20" height="20"></div>
-            <div>Projects</div>
-        </div>
+    <div class="navigation-bar general-text big-gap">
         <div class="horizontal-even-flex general-text">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="aboutme.html">About Me</a></div>
-            <div><a href="projects.html">Projects</a></div>
-            <div><a href="contact.html">Contact</a></div>
+            <div class="hoverbutton"><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></div>
+            <div class="hoverbutton"><a href="aboutme.html" style="text-decoration: none; color: inherit;">About Me</a></div>
+            <div class="hoverbutton"><a href="projects.html" style="text-decoration: none; color: inherit;">Projects</a></div>
+            <div class="hoverbutton"><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></div>
+        </div>
+        <div class="horizontal-even-flex small-gap">
+            <div class="nonbutton"><img src="assets/moon.png" width="20" height="20"></div>
+            <div class="nonbutton">Talia Feng</div>
         </div>
     </div>
 
     <div class="header-box">Past Projects</div>
 
-    <div class="horizontal-flex">
-        <div class="one">
-            <div class="subheader">project 1</div>
-            <div class="subheader">project 4</div>
-        </div>
-        
-        <div class="one">
-            <div class="subheader">project 2</div>
-            <div class="subheader">project 5</div>
+    <div class="tags-container">
+        <button class="filter-button" data-filter="api">api</button>
+        <button class="filter-button" data-filter="backend">backend</button>
+        <button class="filter-button" data-filter="bio">bio</button>
+        <button class="filter-button" data-filter="communication">communication</button>
+        <button class="filter-button" data-filter="cs">cs</button>
+        <button class="filter-button" data-filter="data">data</button>
+        <button class="filter-button" data-filter="database">database</button>
+        <button class="filter-button" data-filter="design">design</button>
+        <button class="filter-button" data-filter="frontend">frontend</button>
+        <button class="filter-button" data-filter="management">management</button>
+        <button class="filter-button" data-filter="marketing">marketing</button>
+        <button class="filter-button" data-filter="planning">planning</button>
+        <button class="filter-button" data-filter="pm">pm</button>
+        <button class="filter-button" data-filter="presentation">presentation</button>
+        <button class="filter-button" data-filter="projectmanagement">projectmanagement</button>
+        <button class="filter-button" data-filter="teamwork">teamwork</button>
+        <button class="filter-button" data-filter="technical">technical</button>
+        <button class="filter-button" data-filter="usertesting">usertesting</button>
+        <button class="filter-button" data-filter="web">web</button>
+        <button class="filter-button" data-filter="all">show all</button>
+    </div>
+
+    <div>
+        <div class="cards-container">
+            <div class="card" data-tags="communication,teamwork">
+                <div class="card-title">Undergraduate TA – UBC (2023–Present)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Taught logic and state machines to 120+ students; designed slides for 500+; adapted to diverse learning styles and collaborated under pressure.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,technical,web,backend,data">
+                <div class="card-title">Web Developer – UBC Science Undergraduate Society (2025–Present)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Designed a degree navigator for 16,000+ students using Python and D3.js.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,frontend,backend,api">
+                <div class="card-title">TrailNotes (Fullstack Journal App)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built journaling features with photo uploads, geolocation, and authentication; deployed with GitHub Pages.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,pm,communication,usertesting">
+                <div class="card-title">InternDB (Project Manager)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Managed InternDB for 4000+ users; gathered 70+ survey responses; led sprints and prioritized features.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,pm,communication,presentation,bio,cs">
+                <div class="card-title">UBC Biomod (Computational Team)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built DNA nanostructures; coded diffusion models; presented internationally in Japan, earning gold and 1st place.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="bio,cs,frontend,backend,api">
+                <div class="card-title">Colony Counter (Python, OpenCV, Django)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Automated bacterial colony counting with computer vision; built a usable frontend.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="backend,data,web">
+                <div class="card-title">UBC Course Query (TypeScript)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built a course search engine using TDD and async REST APIs; parsed data from HTML/JSON.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="backend,database,web">
+                <div class="card-title">Hot Pot Database (JavaScript, HTML, CSS)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built 20+ Express + OracleDB endpoints with CRUD, joins, division, and robust error handling.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="communication,teamwork,design,marketing">
+                <div class="card-title">Marketing Coordinator – UBC World Vision</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Created branding and ran social media for a nonprofit with 1.2k+ followers.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="communication,teamwork,design">
+                <div class="card-title">Academic Officer – UBC CSSS</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Assisted alumni with curriculum proposals for 2700+ CS students.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,communication,planning,management">
+                <div class="card-title">Hackathon Organizer – Project Tech Careers (2021–2024)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Organized 3 hackathons for 150+ high school students across North America.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="projectmanagement,teamwork,communication,presentation">
+                <div class="card-title">Student Researcher – UBC BioProducts Institute (2023–2024)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Led K. medelinensis food preservation project and presented results to 450+ attendees at MURC.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
         </div>
 
-        <div class="one">
-            <div class="subheader">project 3</div>
-            <div class="subheader">project 6</div>
-        </div>
     </div>
+
+    <script src="projects.js"></script>
     
 </body>
 </html>
