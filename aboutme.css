@@ -1,0 +1,52 @@
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .text-flex {
+    flex: 2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .text-flex h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  .text-flex p {
+    line-height: 0.9;
+  }
+
+  
+  .img-flex {
+    scrollbar-width: none;  
+    flex: 1;
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-behavior: auto;
+  }
+  
+  
+  .img-flex img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    scroll-snap-align: start;
+  }
+  
+  .img-flex img.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

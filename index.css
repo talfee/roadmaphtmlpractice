@@ -6,7 +6,7 @@
 
 .welcome-text {
     font-size: xx-large;
-    font-weight: 300; /* "light" is not a valid value */
+    font-weight: 300; 
     text-align: left;
     /* margin: 10px 0; */
 }
@@ -20,3 +20,37 @@
     line-height: 1;
 }
 
+.float {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: floatIn 1s ease-out forwards;
+  }
+  
+  .float:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .typewriter:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes floatIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .floating-image {
+    
+    margin-top: 300px;
+    margin-left: 200px;
+  }
+
+  #click-container img {
+    position: absolute;
+    width: 50px; 
+    height: auto;
+    pointer-events: none; 
+  }
+  

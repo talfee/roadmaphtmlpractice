@@ -18,7 +18,9 @@ body {
     letter-spacing: -0.03em;
 }
 
-
+.header {
+    font-size: xx-large;  
+}
 .subheader {
     font-size: x-large;  
 }
@@ -30,7 +32,7 @@ body {
     display: flex;
     /* background:lightgray; */
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: left;
     gap: 10px;
     /* padding: 10px; */
 }
@@ -87,3 +89,4 @@ body {
     border-radius: 50px;
     transition: all 0.2s ease;       
 }
+
