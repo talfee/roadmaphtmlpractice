@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="assets/moon.png" type="image/png">
 </head>
@@ -15,6 +16,7 @@
             <div class="hoverbutton"><a href="aboutme.html" style="text-decoration: none; color: inherit;">About Me</a></div>
             <div class="hoverbutton"><a href="projects.html" style="text-decoration: none; color: inherit;">Projects</a></div>
             <div class="hoverbutton"><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></div>
+            <div class="hoverbutton"><a href="gnocchi.html" style="text-decoration: none; color: inherit;">...?</a></div>
         </div>
         <div class="horizontal-even-flex small-gap">
             <div class="nonbutton"><img src="assets/moon.png" width="20" height="20"></div>
@@ -40,12 +42,63 @@
         </div>
 
         <script src="index.js" defer></script>
+
+        <div class="space"></div>
+
+        <div class="welcome welcome-text">
+            highlighted projects
+        </div>
         
     </div>
     
-    <!-- <div class="header-box">
-        <img src="assets/welcometxt.png" width="1000" height=auto>
-    </div> -->
+    <div>
+        <div class="cards-container">          
+            
+            <div class="card" data-tags="teamwork,pm,communication,usertesting">
+                <div class="card-title">InternDB (Project Manager)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Managed InternDB for 4000+ users; gathered 70+ survey responses; led sprints and prioritized features.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="teamwork,pm,communication,presentation,bio,cs">
+                <div class="card-title">UBC Biomod (Computational Team)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built DNA nanostructures; coded diffusion models; presented internationally in Japan, earning gold and 1st place.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+           
+            
+            <div class="card" data-tags="backend,data,web">
+                <div class="card-title">UBC Course Query (TypeScript)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built a course search engine using TDD and async REST APIs; parsed data from HTML/JSON.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="backend,database,web">
+                <div class="card-title">Hot Pot Database (JavaScript, HTML, CSS)</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Built 20+ Express + OracleDB endpoints with CRUD, joins, division, and robust error handling.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+            <div class="card" data-tags="communication,teamwork,design,marketing">
+                <div class="card-title">Marketing Coordinator – UBC World Vision</div>
+                <div class="card-image"><img src="assets/moon.png" alt="Project Image"></div>
+                <div class="card-description">Created branding and ran social media for a nonprofit with 1.2k+ followers.</div>
+                <div class="card-link"><a href="#">View Project</a></div>
+            </div>
+            
+    
+            
+        </div>
+        <script src="projects.js"></script>
+
+    </div>
+
+    <script src="projects-scroll.js"></script>
+    
 
     
 </body>
