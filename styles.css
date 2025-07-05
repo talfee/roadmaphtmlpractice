@@ -59,7 +59,6 @@ body {
 
 .horizontal-flex {
     display: flex;
-    /* background:lightgray; */
     text-align: center;
     gap: 10px;
     justify-content: center;
@@ -85,8 +84,13 @@ body {
 
 .nonbutton {
     padding: 10px 0px;
-    border: 1.5px solid transparent; 
+    border: 1.5px solid transparent;
     border-radius: 50px;
-    transition: all 0.2s ease;       
+    transition: all 0.2s ease;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
 }
 

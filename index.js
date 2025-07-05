@@ -5,15 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const img = document.createElement("img");
       const randomImage = images[Math.floor(Math.random() * images.length)];
       img.src = "assets/" + randomImage;
-  
-      img.style.position = "absolute";
+      img.className = "floating-img";
       img.style.left = e.pageX + "px";
       img.style.top = e.pageY + "px";
-      img.style.width = "50px";
-      img.style.transform = "translate(-50%, -50%)";
-      img.style.pointerEvents = "none";
   
       document.getElementById("click-container").appendChild(img);
     });
-  });
-  
+});
